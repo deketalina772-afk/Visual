@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Багатошаровий фон</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Багатошаровий фон у CSS</h1>
+    </header>
+
+    <main class="example">
+
+        <h2>1. Використання вкладених блоків</h2>
+
+        <div class="scene">
+            <div class="sky"></div>
+            <div class="grass"></div>
+            <div class="tree"></div>
+            <div class="house"></div>
+            <div class="character"></div>
+            <div class="ninjago"></div>
+            <div class="wasp"></div>
+        </div>
+
+        <p class="description">
+            У першому прикладі кожен шар оформлено окремим блоком.
+            Використано властивості background-image,
+            background-repeat і background-position.
+        </p>
+
+        <h2>2. Використання можливостей CSS3</h2>
+
+        <div class="multi-background"></div>
+
+        <p class="description">
+            У другому прикладі декілька фонових зображень задаються
+            однією властивістю background-image.
+            Перше зображення у списку розташовується над наступними.
+        </p>
+
+    </main>
+
+    <footer>
+        Приклад використання багатошарових фонів
+    </footer>
+
+</body>
+</html>

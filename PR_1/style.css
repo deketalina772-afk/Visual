@@ -1,0 +1,231 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171717;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header,
+footer {
+    width: 100%;
+    text-align: center;
+    background: #202020;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 3px solid #444;
+}
+
+header h1 {
+    font-size: 28px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 3px solid #444;
+}
+
+.example {
+    width: min(1100px, 95%);
+    margin: 30px auto;
+}
+
+h2 {
+    margin: 25px 0 15px;
+    font-size: 22px;
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #555;
+    background: #87ceeb;
+}
+
+.sky {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: url("images/images1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.grass {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(
+        to bottom,
+        #63ad36,
+        #287521
+    );
+}
+
+.tree {
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    bottom: 15px;
+    width: 180px;
+    height: 250px;
+    background-image: url("images/thteepng.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.house {
+    position: absolute;
+    z-index: 2;
+    right: 60px;
+    bottom: 15px;
+    width: 200px;
+    height: 190px;
+    background-image: url("images/e.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.character {
+    position: absolute;
+    z-index: 3;
+    left: 30%;
+    bottom: 15px;
+    width: 130px;
+    height: 220px;
+    background-image: url("images/a.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.ninjago {
+    position: absolute;
+    z-index: 4;
+    left: 48%;
+    bottom: 15px;
+    width: 145px;
+    height: 230px;
+    background-image: url("images/nin.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+
+.description {
+    margin: 15px 0 25px;
+    padding: 15px;
+    background: #202020;
+    border-left: 3px solid #8a00ff;
+    line-height: 1.6;
+    color: #eee;
+}
+
+.multi-background {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #555;
+    background-color: #87ceeb;
+
+    background-image:
+        url("images/nin.webp"),
+        url("images/a.webp"),
+        url("images/thteepng.png"),
+        url("images/e.png"),
+        linear-gradient(to bottom, #63ad36, #287521),
+        url("images/images1.jpg"),
+        url("images/b.jpg");
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    background-position:
+        48% bottom,
+        30% bottom,
+        left 15px bottom,
+        right 60px bottom,
+        center bottom,
+        center,
+        right 15px top 10px;
+
+    background-size:
+        145px 230px,
+        130px 220px,
+        180px 250px,
+        200px 190px,
+        100% 30%,
+        100% 100%,
+        100px 100px;
+}
+@media (max-width: 700px) {
+    .scene,
+    .multi-background {
+        height: 400px;
+    }
+
+    .tree {
+        width: 120px;
+        height: 180px;
+        left: 5px;
+    }
+
+    .house {
+        width: 140px;
+        height: 140px;
+        right: 10px;
+    }
+
+    .character {
+        width: 90px;
+        height: 170px;
+        left: 28%;
+    }
+
+    .ninjago {
+        width: 100px;
+        height: 180px;
+        left: 48%;
+    }
+
+    .wasp {
+        width: 70px;
+        height: 70px;
+    }
+
+    .multi-background {
+        background-size:
+            100px 180px,
+            90px 170px,
+            120px 180px,
+            140px 140px,
+            100% 30%,
+            100% 100%,
+            70px 70px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}

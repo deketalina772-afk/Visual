@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Навігація</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+nav{
+    background:#444;
+    width:800px;
+    margin:50px auto;
+}
+
+nav ul{
+    list-style:none;
+}
+
+nav > ul > li{
+    display:inline-block;
+    position:relative;
+}
+
+nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:20px 25px;
+}
+
+nav li:hover{
+    background:#5aa0ff;
+}
+
+nav li ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:180px;
+    background:#5aa0ff;
+}
+
+nav li:hover ul{
+    display:block;
+}
+
+nav li ul li{
+    position:relative;
+}
+nav li ul li ul{
+    display:none;
+    position:absolute;
+    top:0;
+    left:100%;
+}
+
+nav li ul li:hover ul{
+    display:block;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">ГОЛОВНА</a></li>
+
+        <li>
+            <a href="#">ВСІ ПРОДУКТИ</a>
+
+            <ul>
+                <li><a href="#">Продукти кат. 1+</a></li>
+
+                <li>
+                    <a href="#">Продукти кат. 2+</a>
+
+                    <ul>
+                        <li><a href="#">Назва 1</a></li>
+                        <li><a href="#">Назва 2</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </li>
+
+        <li><a href="#">ПРО НАС</a></li>
+        <li><a href="#">КОНТАКТИ</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

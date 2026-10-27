@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма реєстрації</title>
+
+<style>
+
+body{
+    background:#e6e6e6;
+    font-family:Times New Roman, serif;
+}
+
+form{
+    width:350px;
+    margin:20px auto;
+    padding:15px;
+    background:#dcdcdc;
+    border:1px solid gray;
+}
+
+table{
+    width:100%;
+}
+
+td:first-child{
+    text-align:right;
+    font-weight:bold;
+    padding:6px;
+}
+
+td:last-child{
+    padding:4px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"]{
+    width:170px;
+    padding:5px;
+}
+
+/* Жовті поля */
+input[type="email"],
+input[name="name"],
+input[name="surname"]{
+    background:#f8ef9f;
+    border:3px solid #c8cd00;
+}
+
+/* Рожеві поля */
+input[type="password"]{
+    background:#ffd4e8;
+    border:3px solid #ff5bd0;
+}
+
+/* Select */
+select{
+    width:180px;
+    padding:5px;
+    background:#c0b8ff;
+    border:3px solid #5a54ff;
+}
+
+/* Textarea */
+textarea{
+    width:170px;
+    height:100px;
+    background:#b9e3b7;
+    border:3px solid #00a000;
+}
+
+input[type="submit"]{
+    background:#8eff8e;
+    border:1px solid green;
+    color:green;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+input[type="reset"]{
+    background:#ff9c9c;
+    border:1px solid red;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+<body>
+
+<form>
+
+<table>
+
+<tr>
+    <td>E-mail:</td>
+    <td>
+        <input type="email" placeholder="Your E-mail">
+    </td>
+</tr>
+
+<tr>
+    <td>Пароль:</td>
+    <td>
+        <input type="password" placeholder="Password">
+    </td>
+</tr>
+
+<tr>
+    <td>Повторіть пароль:</td>
+    <td>
+        <input type="password" placeholder="Repeat password">
+    </td>
+</tr>
+
+<tr>
+    <td>Ім'я:</td>
+    <td>
+        <input type="text" name="name" placeholder="Name">
+    </td>
+</tr>
+
+<tr>
+    <td>Прізвище:</td>
+    <td>
+        <input type="text" name="surname" placeholder="Surname">
+    </td>
+</tr>
+
+<tr>
+    <td>стать:</td>
+    <td>
+        <input type="radio" name="sex">чоловіча
+        <input type="radio" name="sex">жіноча
+    </td>
+</tr>
+
+<tr>
+    <td>Місто:</td>
+    <td>
+        <select>
+            <option>Житомир</option>
+            <option>Київ</option>
+            <option>Львів</option>
+            <option>Ужгород</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>Про себе:</td>
+    <td>
+        <textarea></textarea>
+    </td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>
+        <input type="checkbox"> Отримувати розсилку з сайту
+    </td>
+</tr>
+
+<tr>
+    <td>Погодження:</td>
+    <td>
+        <input type="checkbox"> Погоджуюсь з правилами сайту<br>
+        <input type="checkbox"> Приховати профіль на сайті
+    </td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>
+        <input type="submit" value="Зареєструватися">
+        <input type="reset" value="Reset">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
